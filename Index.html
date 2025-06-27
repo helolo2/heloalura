@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio da Heloisa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+        :root {
+            --cor-principal: #6E859F;
+            --cor-secundaria: #284260;
+            --cor-destaque: #C92BFC;
+        }
+
+        body {
+            font-family: 'Chakra Petch', sans-serif;
+            color: var(--cor-principal);
+        }
+
+        h1, h2, h5 {
+            color: var(--cor-secundaria);
+            font-weight: 700;
+        }
+
+        .lead, .btn-link {
+            color: var(--cor-destaque);
+            font-weight: 700;
+        }
+
+        a, .btn-link:hover {
+            color: var(--cor-principal)
+        }
+
+        a:hover {
+            color: var(--cor-destaque);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar da Heloisa" class="rounded-circle" width="150" height="150">
+        <p class="lead">Oi, eu sou a Heloisa!</p>
+        <h1>Fã de Supernatural e Criadora de Projetos Web</h1>
+        <p>Tenho 17 anos, estou no último ano do ensino médio e sou apaixonada por séries, especialmente Supernatural! Também adoro jogar Stardew Valley e Minecraft nas horas vagas. Estou aprendendo programação e amo transformar minhas paixões em projetos criativos com HTML, CSS e JavaScript!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/supernatural1.png" class="card-img-top" alt="Site de Episódios de Supernatural">
+                    <div class="card-body">
+                        <h5 class="card-title">Catálogo de Episódios de Supernatural</h5>
+                        <p class="card-text">Uma página que mostra os principais episódios da série Supernatural, com sinopses, datas de exibição e easter eggs escondidos. Ideal para fãs da série revisarem seus momentos favoritos.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/supernatural2.png" class="card-img-top" alt="Quiz Supernatural">
+                    <div class="card-body">
+                        <h5 class="card-title">Quiz: Qual Winchester você seria?</h5>
+                        <p class="card-text">Um quiz interativo feito com JavaScript que revela se você se parece mais com Sam, Dean ou Castiel. Baseado nas decisões que você tomaria durante uma caçada sobrenatural!</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/supernatural3.png" class="card-img-top" alt="Mapa Interativo">
+                    <div class="card-body">
+                        <h5 class="card-title">Mapa Interativo das Caçadas</h5>
+                        <p class="card-text">Um mapa interativo que mostra onde aconteceram várias caçadas da série Supernatural nos EUA. Criado com HTML, CSS e um pouco de JS para interatividade.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modais dos projetos -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Catálogo de Episódios de Supernatural</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto é uma webpage com HTML e CSS que apresenta os episódios mais marcantes da série Supernatural, com imagens, curiosidades e links para assistir. Um ótimo recurso para fãs reviverem a série!</p>
+                    <img src="img/supernatural1.png" class="img-fluid" alt="Catálogo de Supernatural">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quiz: Qual Winchester você seria?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Feito com HTML, CSS e JavaScript, este quiz é uma experiência divertida e interativa para descobrir qual personagem da série mais combina com você. Cada escolha altera o resultado final.</p>
+                    <img src="img/supernatural2.png" class="img-fluid" alt="Quiz Winchester">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mapa Interativo das Caçadas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Com HTML, CSS e JS, este projeto mapeia as principais caçadas de Supernatural nos EUA. Ao passar o mouse pelos estados, aparecem descrições dos episódios e monstros enfrentados pelos irmãos Winchester.</p>
+                    <img src="img/supernatural3.png" class="img-fluid" alt="Mapa de Caçadas">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="#">GitHub</a> <!-- substitua com seu link -->
+        </div>
+        <p class="my-5 text-center">© 2024. Produzido por Heloisa</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
